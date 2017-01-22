@@ -3,7 +3,7 @@
 /* Main Layout*/
 @include xs {
     .gridxs--hide {
-        display: none;
+        display: none ;
     } .gridxs--fit > .cell { 
         flex: 1; 
     } .gridxs--full > .cell {
@@ -20,7 +20,7 @@
 }
 @include sm {
     .gridsm--hide{
-        display: none;
+        display: none ;
     } .gridsm--fit > .cell { 
         flex: 1; 
     } .gridsm--full > .cell {

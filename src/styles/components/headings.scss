@@ -1,5 +1,7 @@
 h1 { 
-    font:700 90px 'Alegreya', serif;text-align:center; line-height:90px; color:#fff; 
+    font:700 3rem 'Alegreya', serif; 
+    margin:0 0 0 0; 
+    padding:0 0 0 0; 
 } h2 { 
     font:400 1.2rem 'Open Sans', sans-serif;
     margin:3px 0 0 0; 
@@ -8,23 +10,11 @@ h1 {
 } p {
     margin:0 0 0 0; 
     padding:0 0 0 0; 
-}
-article h1{
-    font:700 3rem 'Alegreya', serif;
+} article h2{
+    font:700 1.3rem 'Open Sans', sans-serif;
     text-align:center;
-    @include xl {
-        text-align:left;
-    }
-    @include lg {
-        text-align:left;
-    }
-    @include md {
-        text-align:left;
-    }
-}
-article h2{
-    font:700 2rem'Alegreya', serif;
-    text-align:center;
+    padding:0 0 19px 0;
+    
     @include xl {
         text-align:left;
     }
@@ -35,9 +25,10 @@ article h2{
         text-align:left;
     }
 } article p{
-    font:700 1.5rem 'Alegreya', serif;
+    font:400 1.5rem 'Open Sans', sans-serif;
     text-align:center;
-    padding:20px 0 0 20px;
+    line-height:2.2rem;
+    
     @include xl {
         text-align:left;
     }

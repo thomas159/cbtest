@@ -1,0 +1,36 @@
+.hero-button{
+    margin:0 auto;
+    display:flex;
+    width:220px;
+    height:64px;
+    border-radius:5px;
+    border:0px;
+    color:#fff;
+    cursor: pointer;
+    background: linear-gradient(#417505, #305702); 
+    font:700 2.2rem 'Alegreya', serif; 
+    @include center;
+    transition: all 0.5s ease-out;
+&:hover{
+    background: linear-gradient(#618C30, #4E7024); 
+    }
+}
+
+.btn {
+  width:auto;
+  border:1px solid #000;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+  text-align:center;
+}
+
+.btn:hover {
+  width:auto;
+  background:#0D6050 ;
+  color:#fff;
+  text-decoration: none;
+} 

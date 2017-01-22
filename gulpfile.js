@@ -19,11 +19,13 @@ var gulp = require('gulp'),
     pug = require('gulp-pug'),
     gulp_watch_pug = require('gulp-watch-pug'),
     del = require('del');
+    postcss = require('gulp-postcss'),
+    autoprefixer = require('autoprefixer');
 
 // Styles
 gulp.task('styles', function() {
     return sass('src/styles/main.scss', { style: 'expanded' })
-        .pipe(autoprefixer('last 2 version'))
+        .pipe(postcss([ autoprefixer() ]))
         .pipe(gulp.dest('dist/styles'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(cssnano())
@@ -89,4 +91,3 @@ gulp.task('watch', function() {
     gulp.watch(['dist/**']).on('change', livereload.changed);
 
 });
-
