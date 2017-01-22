@@ -1,0 +1,7 @@
+Step 1 ) Run "npm install" in the command line to install the node dependencies listed in the gulpfile.js
+
+Step 2 ) Run "gulp default" to run the default task listed in the gulpfile.js. This will compile everything in the "src" folder into the "dist" folder
+
+Step 3 ) Run "gulp watch" , this will pick up any changes you make automatically.
+
+Optional - Run "gulp clean" this will clean all files in dist 

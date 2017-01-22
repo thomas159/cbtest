@@ -1,0 +1,137 @@
+
+
+/* Main Layout*/
+@include xs {
+    .gridxs--hide {
+        display: none;
+    } .gridxs--fit > .cell { 
+        flex: 1; 
+    } .gridxs--full > .cell {
+        flex: 0 0 100%; 
+    } .gridxs--1of2 > .cell { 
+        flex: 0 0 50%; 
+    } .gridxs--1of3 > .cell {
+        flex: 0 0 33.3333%; 
+    } .gridxs--1of4 > .cell {
+        flex: 0 0 25%;
+    } .grid--gutters > .cell { 
+        padding: 5px;
+    }
+}
+@include sm {
+    .gridsm--hide{
+        display: none;
+    } .gridsm--fit > .cell { 
+        flex: 1; 
+    } .gridsm--full > .cell {
+        flex: 0 0 100%; 
+    } .gridsm--1of2 > .cell { 
+        flex: 0 0 50%; 
+    } .gridsm--1of3 > .cell {
+        flex: 0 0 33.3333%; 
+    } .gridsm--1of4 > .cell {
+        flex: 0 0 25%;
+    } .grid--gutters > .cell { 
+        padding: 5px;
+    }
+}
+@include md {
+    .gridms--hide{
+        display: none;
+    } .gridmd--fit > .cell { 
+        flex: 1; 
+    } .gridmd--full > .cell {
+        flex: 0 0 100%; 
+    } .gridmd--1of2 > .cell { 
+        flex: 0 0 50%; 
+    } .gridmd--1of3 > .cell {
+        flex: 0 0 33.3333%; 
+    } .gridmd--1of4 > .cell {
+        flex: 0 0 25%;
+    } .gridmd--gutters > .cell { 
+        padding: 5px;
+    }
+}
+@include lg {
+    .gridlg--hide{
+        display: none;
+    } .gridlg--fit > .cell { 
+        flex: 1; 
+    } .gridlg--full > .cell {
+        flex: 0 0 100%; 
+    } .gridlg--1of2 > .cell { 
+        flex: 0 0 50%; 
+    } .gridlg--1of3 > .cell {
+        flex: 0 0 33.3333%; 
+    } .gridlg--1of4 > .cell {
+        flex: 0 0 25%;
+    } .grid--gutters > .cell { 
+        padding: 5px;
+    }
+}
+@include xl {
+    .gridxl--hide{
+        display: none;
+    } .gridxl--fit > .cell { 
+        flex: 1; 
+    } .gridxl--full > .cell {
+        flex: 0 0 100%; 
+    } .gridxl--1of2 > .cell { 
+        flex: 0 0 50%; 
+    } .gridxl--1of3 > .cell {
+        flex: 0 0 33.3333%; 
+    } .gridxl--1of4 > .cell {
+        flex: 0 0 25%;
+    } .grid--gutters > .cell { 
+        padding: 5px;
+    }
+}
+
+// Grid Styles
+.grid { 
+    position: relative; 
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row;
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+} .cell {
+    position: relative;
+    flex: 1;
+    flex-direction: column; 
+    display: flex; 
+    text-align: left;
+} .cell-row { 
+    display:flex; 
+    flex: 1;
+    flex-direction: row;
+    display: flex;
+    text-align: left; 
+}
+/*--------- Generic styles ----------*/
+.grid--flexcells > .cell{
+    display :flex;
+} .grid--top { 
+    align-items: flex-start;
+} .grid--bottom { 
+    align-items: flex-end; 
+} .grid--center {
+    align-items: center; text-align:left;
+} .grid--justifyCenter { 
+    justify-content: center; 
+} .cell--top { 
+    align-self: flex-start;
+} .cell--bottom {
+    align-self: flex-end; 
+} .cell--center { 
+    align-self: center;
+} .flex-column {
+    flex-direction: column;
+} .center { 
+    justify-content: center; align-items: center;
+} .cell--autoSize { 
+    flex: none;
+}
+
+

@@ -1,0 +1,50 @@
+h1 { 
+    font:700 90px 'Alegreya', serif;text-align:center; line-height:90px; color:#fff; 
+} h2 { 
+    font:400 1.2rem 'Open Sans', sans-serif;
+    margin:3px 0 0 0; 
+    padding:0 0 0 0; 
+    text-transform:uppercase;
+} p {
+    margin:0 0 0 0; 
+    padding:0 0 0 0; 
+}
+article h1{
+    font:700 3rem 'Alegreya', serif;
+    text-align:center;
+    @include xl {
+        text-align:left;
+    }
+    @include lg {
+        text-align:left;
+    }
+    @include md {
+        text-align:left;
+    }
+}
+article h2{
+    font:700 2rem'Alegreya', serif;
+    text-align:center;
+    @include xl {
+        text-align:left;
+    }
+    @include lg {
+        text-align:left;
+    }
+    @include md {
+        text-align:left;
+    }
+} article p{
+    font:700 1.5rem 'Alegreya', serif;
+    text-align:center;
+    padding:20px 0 0 20px;
+    @include xl {
+        text-align:left;
+    }
+    @include lg {
+        text-align:left;
+    }
+    @include md {
+        text-align:left;
+    }
+}

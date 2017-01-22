@@ -1,0 +1,37 @@
+DESCRIPTION:
+
+Not always does a webdeveloper have a free hand at what he should do. Actually most of the time he is at his client's and a graphic designer's mercy.
+
+A frontend developer is given an image and is expected to deliver HTML & CSS code within a short time.
+
+He can't choose to do something differently or in an easier way only because he feels like it. The client wants this exact design and thats it.
+
+This challenge will make you try just that - take an image that the client made together with a graphic designer and recreate it in code.
+
+The task
+Download this file: challenge.zip and unpack it.
+
+The file contains an image of the entire page's design, a document containing all the texts used on the page and a folder with separate images that you will need.
+
+The task is to recreate the designed image in working HTML & CSS.
+
+Notes
+The keyword here is pixel perfection. The client wants exactly this. Try to get as close to the original image as possible.
+
+The fonts used in the design are Alegreya and Open Sans. Both can be found on Google fonts.
+
+For measuring and color sampling a developer would generally use a graphical program (eg. Photoshop), but you can do just as well with a couple of Chrome plugins.
+
+Just open the image with the design in Chrome (make sure you have it zoomed at 100% size) and use these plugins (or find some others for youself):
+
+For measurements: ruler plugin
+
+For color picking: Colorzilla or ColorPick Eyedropper
+
+Because you might have problems using the Chrome plugins on local files here's another way to look at the design: design.html
+
+Want more?
+The designer did not design a mobile-phone version of the page. Do it yourself!
+
+Add CSS media queries to make the page look nice on mobile phones and other small screen devices.
+

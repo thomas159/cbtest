@@ -1,0 +1,19 @@
+Key Take-aways:
+
+We went through the project very carefully and found a lot of bugs. Mainly, the most crucial part is HTML semantic. You can validate the page at https://validator.w3.org/ and see the page is not valid. Other notes for each part of the project can be found below.
+
+Based on all mentioned cons, the project's outcome doesn't meet STRV level of web performance.
+
+Thumbs down	Assets, CSS quality, Functionality, HTML 5 tags, JS quality, Pixel Perfection, Project setup (packages, structure)
+Two thumbs down	Environment setup (+ linting, minifying, deploying), HTML semantics/validation
+Notes:
+
+HTML semantics/validation	PROS: 1) claims NEW STRV, HANDMADE and STRV M6 done in simple divs (no heading) CONS: 1) no `alt` attribute on `img` tags 2) navigation should be done as unsorted list 3) how it works sections should be done as sorted list 4) duplicated content (titles) in header & footer (+ multiple h1 and h2) 5) messy headings sequence in Comments section 6) duplicated IDs selector 7) `script` between `body` and `html` 8) in comments section there should be an input for writing comment, no just a div 9) icons for social links at footer should be done as hyperlinks
+Project setup (packages, structure)	PROS: 1) use of PUH for views CONS: 1) no automatization (grunt/gulp/webpack) 2) no packages management (npm/bower...) 3) SASS compilation is running outside of the project (probably - no setup in the project)
+CSS quality	PROS: 1) use of SASS 2) multiple files NEUTRAL: 1) some formating of sass files would be appreciated - it is super hard to read such a messy files 2) no mobile first approach CONS: 1) no use of variables 2) using !important 3) hard-to-read naming conventions 4) no autoprefixer / vendor mixins 5) cross browser compatibility
+Assets	PROS: 1) fonts via Google Fonts CONS: 1) size of images - it is unwanted to load images that have +2MB (covers) 2) icons should be done using svg (or iconfont) 3) background images in header and footer should be jpegs 4) no retina images (car, avatars)
+HTML 5 tags	PROS: 1) use of `footer`, `nav` CONS: 1) no use of `header`, `section`, `article`
+Functionality	PROS: 1) mobile navigation CONS: 1) anchors in navigation should scroll smoothly with animation 2) comments section (missing: validation of input, handle comments count, reply)
+Pixel Perfection	CONS: 1) differences in sizes from provided designs (mobile & desktop) - paddings, button sizes, mobile menu etc. 2) no hover effects on navigation
+JS quality	NEUTRAL: 1) Very basic use of jQuery
+Environment setup (+ linting, minifying, deploying)	CONS: 1) No env setup 2) No minifying
