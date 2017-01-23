@@ -54,14 +54,14 @@ nav {
     @include lg {
         position: absolute; 
         width:400px;
-        top:10px;
-        right:10px;
+        top:30px;
+        right:48px;
     }
     @include md {
         position: absolute; 
         width:400px;
-        top:10px;
-        right:10px;
+        top:30px;
+        right:48px;
     }
 } nav .cell {
     text-align:center; 
