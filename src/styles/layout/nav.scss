@@ -27,15 +27,15 @@ nav {
     top:10px;
     left:10px;
     @include xl {
-        top:10px;
+        top:13px;
         left:0px;
     }
     @include lg {
-        top:10px;
+        top:13px;
         left:0px;
     }
     @include md {
-        top:10px;
+        top:13px;
         left:0px;
     }
 }.sticky {
@@ -66,6 +66,7 @@ nav {
 } nav .cell {
     text-align:center; 
     text-transform:uppercase;
+    background:#fff;
 } nav .cell:nth-child(2) { 
     padding:20px 0 0px 0px;
     @include xl {
@@ -92,7 +93,7 @@ nav {
     color: $blue;
     text-decoration: none;
 } nav a:hover, nav a:active {
-    color: $blue;   
+    color: #333;   
     text-decoration: none; ;
 } .hide{
     @include sm {
@@ -101,37 +102,76 @@ nav {
     @include xs {
         display: none;
     }
-
-} .close {
+} .mob-menu{
     position: absolute;
     right: 10px;
-    top: 10px;
-    width: 32px;
-    height: 32px;
-    opacity: 0.3;
-    cursor: pointer;
-} .close:hover {
+    top: 22px;
+    background:#fff;
+}
+/* ALL */
+
+.hamburger .line{
     
-} .close:before, .close:after {
-    position: absolute;
-    left: 15px;
-    content: ' ';
-    height: 33px;
-    width: 2px;
-    background-color: #333;
-} .close:before {
-    transform: rotate(45deg);
-} .close:after {
-    transform: rotate(-45deg);
+  width: 40px;
+  height: 5px;
+  background-color: $blue;
+  display: block;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
-
-
-.border-menu {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    height:32px;
-    width:32px;
-    background:#ff00ff;
+.hamburger:hover{
+  cursor: pointer;
 }
+
+/* ONE */
+
+#hamburger-1.is-active .line:nth-child(2){
+  opacity: 0;
+}
+
+#hamburger-1.is-active .line:nth-child(1){
+  transform: translateY(10px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(3){
+  transform: translateY(-10px) rotate(-45deg);
+}
+// } .close {
+//     position: absolute;
+//     right: 10px;
+//     top: 10px;
+//     width: 32px;
+//     height: 32px;
+//     opacity: 0.3;
+//     cursor: pointer;
+// } .close:hover {
+    
+// } .close:before, .close:after {
+//     position: absolute;
+//     left: 15px;
+//     content: ' ';
+//     height: 33px;
+//     width: 2px;
+//     background-color: #333;
+// } .close:before {
+//     transform: rotate(45deg);
+// } .close:after {
+//     transform: rotate(-45deg);
+// }
+
+
+
+// .border-menu {
+//     position: absolute;
+//     right: 10px;
+//     top: 10px;
+//     height:32px;
+//     width:32px;
+//     background:#ff00ff;
+// }
+
+
+

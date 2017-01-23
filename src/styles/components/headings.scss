@@ -38,4 +38,6 @@ h1 {
     @include md {
         text-align:left;
     }
+} figcaption h2 {
+    font:400 2rem 'Open Sans', sans-serif;
 }

@@ -559,6 +559,10 @@ article p {
   }
 }
 
+figcaption h2 {
+  font: 400 2rem 'Open Sans', sans-serif;
+}
+
 /* Main Layout*/
 @media only screen and (max-width: 412px) {
   .gridxs--hide {
@@ -1072,7 +1076,6 @@ figcaption {
   height: 66px;
   bottom: 0px;
   padding: 0 0 0 17px;
-  font: 400 2.4rem 'Open Sans', sans-serif;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1215,19 +1218,19 @@ nav {
 }
 @media only screen and (min-width: 1500px) {
   .logo {
-    top: 10px;
+    top: 13px;
     left: 0px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1499px) {
   .logo {
-    top: 10px;
+    top: 13px;
     left: 0px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
-    top: 10px;
+    top: 13px;
     left: 0px;
   }
 }
@@ -1269,6 +1272,7 @@ nav #menubar {
 nav .cell {
   text-align: center;
   text-transform: uppercase;
+  background: #fff;
 }
 
 nav .cell:nth-child(2) {
@@ -1315,7 +1319,7 @@ nav a, nav a:visited {
 }
 
 nav a:hover, nav a:active {
-  color: #173493;
+  color: #333;
   text-decoration: none;
 }
 
@@ -1330,40 +1334,39 @@ nav a:hover, nav a:active {
   }
 }
 
-.close {
+.mob-menu {
   position: absolute;
   right: 10px;
-  top: 10px;
-  width: 32px;
-  height: 32px;
-  opacity: 0.3;
+  top: 22px;
+  background: #fff;
+}
+
+/* ALL */
+.hamburger .line {
+  width: 40px;
+  height: 5px;
+  background-color: #173493;
+  display: block;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
   cursor: pointer;
 }
 
-.close:before, .close:after {
-  position: absolute;
-  left: 15px;
-  content: ' ';
-  height: 33px;
-  width: 2px;
-  background-color: #333;
+/* ONE */
+#hamburger-1.is-active .line:nth-child(2) {
+  opacity: 0;
 }
 
-.close:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+#hamburger-1.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(45deg);
+          transform: translateY(10px) rotate(45deg);
 }
 
-.close:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-.border-menu {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  height: 32px;
-  width: 32px;
-  background: #ff00ff;
+#hamburger-1.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+          transform: translateY(-10px) rotate(-45deg);
 }
